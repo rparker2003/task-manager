@@ -1,0 +1,227 @@
+/* Existing styles for the app */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-header {
+  background-color: #1e1e1e;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.App-main {
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TaskForm,
+.TaskList,
+.TaskFilter {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+.TaskForm h2,
+.TaskList h2,
+.TaskFilter label {
+  margin-bottom: 20px;
+}
+
+.TaskForm label,
+.TaskList label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.TaskForm input[type="text"],
+.TaskForm input[type="date"],
+.TaskForm select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.TaskForm button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.TaskForm button:hover {
+  background-color: #0056b3;
+}
+
+.TaskList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.TaskList li {
+  margin-bottom: 10px;
+}
+
+.TaskItem {
+  background-color: #333;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  padding-bottom: 10px;
+  margin: 6px;
+}
+
+.TaskItem:last-child {
+  border-bottom: none;
+}
+
+.TaskItem-completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.TaskItem button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.TaskItem button:hover {
+  background-color: #0056b3;
+}
+
+.task-item-checkbox {
+  scale: 140%;
+  margin-right: 8px;
+}
+
+.TaskFilter select {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #666;
+}
+
+/* Additional styles for EditTaskForm */
+.TaskForm input[type="text"],
+.TaskForm input[type="date"],
+.TaskForm select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.TaskForm button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.TaskForm button:hover {
+  background-color: #0056b3;
+}
+
+.Add-task-button {
+  
+}
